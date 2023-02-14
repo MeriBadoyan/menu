@@ -3,12 +3,10 @@
     padding: 0;
 }
 
-.nav {
-    width: 300px
-}
-
 .main-menu {
     list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .main-menu a {
@@ -19,6 +17,7 @@
     text-decoration: none;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
+    width: 100px;
 }
 
 .main-menu a:hover {
@@ -26,7 +25,9 @@
     background-color: rgb(221, 117, 117);
 }
 
-.categoriesUl {
+.categoriesUl,
+.jsUl,
+.javaUl {
     display: none;
     list-style: none;
 }
@@ -34,10 +35,19 @@
 .subMenu:hover .categoriesUl {
     display: block;
     position: absolute;
-    left: 300px;
-    bottom: 0px;
+    top: 40px;
 }
 
-.subMenu {
+.subMenu,
+.secondSubMenu,
+.thirdSubMenu {
     position: relative;
+}
+
+.secondSubMenu:hover .jsUl,
+.thirdSubMenu:hover .javaUl {
+    position: absolute;
+    display: block;
+    left: 120px;
+    top: 0px;
 }
