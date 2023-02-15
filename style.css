@@ -29,6 +29,8 @@
 .jsUl {
     display: none;
     list-style: none;
+    position: absolute;
+
 }
 
 .subMenu {
@@ -37,12 +39,10 @@
 
 .subMenu:hover>.categoriesUl {
     display: block;
-    position: absolute;
     top: 40px;
 }
 
 .subMenu:hover>.jsUl {
-    position: absolute;
     display: block;
     left: 120px;
     top: 0px;
