@@ -26,26 +26,22 @@
 }
 
 .categoriesUl,
-.jsUl,
-.javaUl {
+.jsUl {
     display: none;
     list-style: none;
 }
 
-.subMenu:hover .categoriesUl {
+.subMenu {
+    position: relative;
+}
+
+.subMenu:hover>.categoriesUl {
     display: block;
     position: absolute;
     top: 40px;
 }
 
-.subMenu,
-.secondSubMenu,
-.thirdSubMenu {
-    position: relative;
-}
-
-.secondSubMenu:hover .jsUl,
-.thirdSubMenu:hover .javaUl {
+.subMenu:hover>.jsUl {
     position: absolute;
     display: block;
     left: 120px;
